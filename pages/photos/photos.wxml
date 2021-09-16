@@ -1,0 +1,47 @@
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">解析记录</view>
+</cu-custom>
+<view class="cu-card article">
+  <view class="cu-item shadow">
+    <view class="title">
+      <view class="text-red">注意⚠️</view>
+    </view>
+    <view class="content">
+      <view class="desc">
+        <view class="text-content">
+         解析记录只查询30分钟以内。
+        </view>
+      </view>
+    </view>
+</view>
+
+  <view class="cu-item shadow" style="padding-bottom: 5rpx;" wx:if="{{!parsingInfo}}">
+    <view class="title">
+      <view class="text-red">您暂无解析记录!</view>
+    </view>
+  </view>
+
+</view>
+<view class="cu-card case" wx:if="{{parsingInfo}}" wx:key>
+  <view class="cu-item shadow" wx:for="{{parsingInfo}}" wx:key="key">
+    <view class="image">
+      <video src="{{item.downloadUrl}}" mode="widthFix" controls="false" muted="true" custom-cache="{{false}}"style="width:100%" ></video>
+      <view class="cu-tag bg-transparent">
+        <view class="cu-tag bg-blue light">视频作者:{{item.author}}</view>
+      </view>
+      <view>
+        <button data-url="{{item.downloadUrl}}"
+          style="display: flex;background-color: var(--blue);color: var(--white);margin-bottom: 20rpx;margin-top:-15rpx;align-items: center;justify-content: center;font-size:30rpx;"
+          bindtap="saveVideo">
+          下载<text class="cuIcon-down"></text>
+        </button>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class='cu-load load-modal' wx:if="{{isDownload}}">
+  <image src='/images/logo.png' class='png' mode='aspectFit'></image>
+  <view class='gray-text'>视频保存中</view>
+</view>

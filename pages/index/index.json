@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "my": "/pages/home/home",
+    "help":"/pages/help/help",
+    "resolution":"/pages/resolution/resolution",
+    "welfare":"/pages/welfare/welfare"
+  }
+}

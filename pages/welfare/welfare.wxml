@@ -1,0 +1,25 @@
+<cu-custom bgColor="bg-gradual-blue">
+  <view slot="content">福利</view>
+</cu-custom>
+
+<!-- <view class="cu-card case">
+  <view class="cu-item shadow">
+    <view class="image">
+      <image src="https://gw.alicdn.com/tfs/TB16Sf834v1gK0jSZFFXXb0sXXa-640-361.jpg" mode="widthFix"></image>
+      <view class="cu-tag bg-blue">饿了么10-31元点餐红包</view>
+      <view class="cu-bar bg-shadeBottom">
+      </view>
+    </view>
+  </view>
+</view> -->
+
+<view class="cu-card case" bindtap="mtCps">
+  <view class="cu-item shadow">
+    <view class="image">
+      <image src="https://p0.meituan.net/marketingcpsmedia/5219104132ef419211668c3a687eaea2121037.jpg" mode="widthFix"></image>
+      <view class="cu-tag bg-yellow">美团外卖10元点餐红包</view>
+      <view class="cu-bar bg-shadeBottom">
+      </view>
+    </view>
+  </view>
+</view>

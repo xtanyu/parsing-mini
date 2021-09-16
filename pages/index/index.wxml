@@ -1,0 +1,34 @@
+<!-- <basics wx:if="{{PageCur=='basics'}}"></basics>-->
+<welfare wx:if="{{PageCur=='welfare'}}"></welfare> 
+<resolution wx:if="{{PageCur=='resolution'}}"></resolution>
+<help wx:if="{{PageCur=='help'}}"></help>
+<my wx:if="{{PageCur=='my'}}"></my>
+<view class="cu-bar tabbar bg-white shadow foot">
+  <view class="action" bindtap="NavChange" data-cur="resolution">
+    <view class='cuIcon-cu-image'>
+      <image src="/images/tabbar/video{{PageCur=='resolution'?'_cur':''}}.png"></image>
+    </view>
+    <view class="{{PageCur=='resolution'?'text-blue':'text-gray'}}">视频解析</view>
+  </view>
+
+  <view class="action" bindtap="NavChange" data-cur="welfare">
+    <view class='cuIcon-cu-image'>
+      <image src="/images/tabbar/welfare{{PageCur=='welfare'?'_cur':''}}.png"></image>
+    </view>
+    <view class="{{PageCur=='welfare'?'text-blue':'text-gray'}}">福利</view>
+  </view>
+  
+  <view class="action" bindtap="NavChange" data-cur="help">
+    <view class='cuIcon-cu-image'>
+      <image src="/images/tabbar/help{{PageCur=='help'?'_cur':''}}.png"></image>
+    </view>
+    <view class="{{PageCur=='help'?'text-blue':'text-gray'}}">帮助</view>
+  </view>
+
+  <view class="action" bindtap="NavChange" data-cur="my">
+    <view class='cuIcon-cu-image'>
+      <image src="/images/tabbar/my{{PageCur=='my'?'_cur':''}}.png"></image>
+    </view>
+    <view class="{{PageCur=='my'?'text-blue':'text-gray'}}">我的</view>
+  </view>
+</view>

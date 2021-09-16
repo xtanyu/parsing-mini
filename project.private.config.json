@@ -1,0 +1,30 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/home/parsingInfo/parsingInfo",
+          "pathName": "pages/home/parsingInfo/parsingInfo",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "解析记录",
+          "pathName": "pages/photos/photos",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

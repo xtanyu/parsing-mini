@@ -1,0 +1,62 @@
+<scroll-view scroll-y class="scrollPage">
+  <cu-custom bgColor="bg-gradual-blue">
+    <view slot="content" class="text-shadow-meows">
+      <text class="text-white">帮助</text>
+    </view>
+  </cu-custom>
+  <view class="cu-card article">
+    <view class="cu-item shadow">
+      <view class="title">
+        <view class="text-red">声明 !</view>
+      </view>
+      <view class="content">
+        <view class="desc">
+          <view class="text-content">功能仅供个人娱乐学习,严禁商业用途。解析出来的视频归相关网站及作者所有。本站不储存任何视频及图片。</view>
+        </view>
+      </view>
+    </view>
+
+
+    <view class="cu-item shadow">
+      <view class="title">
+        <view class="text-cut">如何去水印？</view>
+      </view>
+      <view class="content">
+        <!-- <image src="https://ossweb-img.qq.com/images/lol/web201310/skin/big10006.jpg" mode="aspectFill"></image> -->
+        <view class="desc">
+          <view class="text-content">打开需要去水印的APP,点击分享按钮,选"复制链接",打开小程序后会自动抓取复制的链接,如果没有自动抓取,自行粘贴到链接文本框里,点击去除即可。</view>
+          <!-- <view class="text-content"></view> -->
+          <view>
+            <view class="cu-tag bg-red light sm round">帮助</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="cu-item shadow">
+      <view class="title">
+        <view class="text-cut">突然使用不了,下载不了怎么办？</view>
+      </view>
+      <view class="content">
+        <view class="desc">
+          <view class="text-content">刚刚发布的视频或者刚取消私密的视频可能会出现解析出有水印或者无法解析的情况,需要等待一段时间再来解析。</view>
+          <view>
+            <view class="cu-tag bg-red light sm round">帮助</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="cu-item shadow">
+      <view class="title">
+        <view class="text-cut">为什么会解析失败？</view>
+      </view>
+      <view class="content">
+        <view class="desc">
+          <view class="text-content">视频被删除、视频是私密的、视频在审核中、账号是私密的,都会解析失败。</view>
+          <view>
+            <view class="cu-tag bg-red light sm round">帮助</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</scroll-view>

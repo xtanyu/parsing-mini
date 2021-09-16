@@ -1,0 +1,159 @@
+<cu-custom bgColor="bg-gradual-blue">
+  <view slot="content">视频解析</view>
+</cu-custom>
+<view class="cu-card article">
+<view class="cu-item shadow">
+      <view class="title">
+        寄语
+      </view>
+      <view class="content">
+        <!-- <image src="https://ossweb-img.qq.com/images/lol/web201310/skin/big10006.jpg" mode="aspectFill"></image> -->
+        <view class="desc">
+          <view class="text-content">本小程序永久提供免费解析服务,如果大家使用下来觉得还不错的可以右上角分享给自己的朋友。
+          有什么好的意见和想法也可以联系我٩(๑❛ᴗ❛๑)۶</view>
+          <!-- <view class="text-content"></view> -->
+        </view>
+      </view>
+</view>
+</view>
+
+<view class="cu-list menu card-menu margin-top" style="margin-top:-1%">
+  <view class="cu-item">
+    <view class="content">
+      <image src="../../images/video-icon/logo-douyin.png" class="png" mode="aspectFit"></image>
+      <image src="../../images/video-icon/logo-gitShow.png" class="png" mode="aspectFit"></image>
+      <image src="../../images/video-icon/logo-zuiyou.png" class="png" mode="aspectFit"></image>
+      <image src="../../images/video-icon/logo-ppx.png" class="png" mode="aspectFit"></image>
+      <image src="../../images/video-icon/logo-microview.png" class="png" mode="aspectFit"></image>
+      <image src="../../images/video-icon/logo-volcano.png" class="png" mode="aspectFit"></image>
+      <image src="../../images/video-icon/logo-music.png" class="png" mode="aspectFit"></image>
+    </view>
+    <!-- <view class="cu-tag line-blue">
+				可用平台
+			</view> -->
+  </view>
+
+
+  <view class="cu-item {{menuArrow?'arrow':''}}">
+      <view class="content">
+        <text class="cuIcon-warn text-green"></text>
+        <text class="text-grey">注意</text>
+      </view>
+      <view class="action">
+        <text class="text-grey text-sm">如果出现解析失败的情况请退出重试</text>
+      </view>
+    </view>
+
+  <!-- <view class="cu-item">
+    <view class="content">
+      <text class="cuIcon-edit text-green"></text>
+      <text class="text-grey">{{videoTitle?videoTitle:"视频标题"}}</text>
+    </view>
+    <view class="action">
+      <text class="text-grey text-sm">{{videoUrl?videoUrl:"复制分享链接后自动抓取"}}</text>
+    </view>
+  </view> -->
+
+  <view class="cu-item">
+    <view class="content">
+      <text class="cuIcon-link text-green"></text>
+      <text class="text-grey">链接</text>
+    </view>
+    <view class="action">
+      <text class="text-grey text-sm">{{shortVideoUrl}}</text>
+      <button class="cu-tag line-green" wx:if="{{!shortVideoUrl}}" bindtap="copy">手动粘贴</button>
+    </view>
+  </view>
+
+  <view class="cu-item arrow">
+      <navigator class="content" url="../photos/photos" open-type="navigate" hover-class="none">
+        <text class="cuIcon-formfill text-red"></text>
+        <text class="text-grey">本地解析记录（半小时内）</text>
+      </navigator>
+      <!-- <view class="action">
+        <text class="text-grey text-sm">只保留半小时</text>
+      </view> -->
+    </view>
+</view>
+
+
+<view class="padding flex flex-direction" wx:if="{{isButton}}">
+  <button bindtap="submit" class="cu-btn bg-blue lg">
+    <text >一键去除视频水印</text>
+  </button>
+</view>
+<view class="padding flex flex-direction" wx:if="{{!isButton}}">
+  <button bindtap="submit" class="cu-btn bg-blue lg" type="" disabled>
+   <text  class="cuIcon-loading iconfont-spin"></text>
+   解析中
+  </button>
+</view>
+
+
+
+<view class="cu-modal {{isShow?'show':''}}">
+  <view class="cu-dialog">
+    <video src="{{url}}" controls="false" autoplay="true" muted="true" style="margin: 25px 0px 0px">
+      <view class="cu-bar justify-end text-blue">
+        <view class="action" bindtap="hideModal">
+          <text class="cuIcon-close "></text>
+        </view>
+      </view>
+    </video>
+    <view class="cu-bar bg-white">
+      <view class="action margin-0 flex-sub solid-left text-blue" bindtap="saveVideo">保存到相册</view>
+    </view>
+  </view>
+</view>
+<view class='cu-load load-modal' wx:if="{{isDownload}}">
+  <image src='/images/logo.png' class='png' mode='aspectFit'></image>
+  <view class='gray-text'>视频保存中</view>
+</view>
+
+
+<view class="cu-modal show" wx:if="{{isUrlDownload}}">
+  <view class="cu-dialog">
+    <view class="cu-bar bg-white justify-end">
+      <view class="content">微信域解析异常</view>
+      <view class="action" bindtap="hideModal">
+        <text class="cuIcon-close text-red"></text>
+      </view>
+    </view>
+    <view>
+      你可以复制以下链接到浏览器进行下载
+    </view>
+    <view class="padding-xl">
+      <text style="-webkit-line-clamp: 2;">{{shortUrl}}</text>
+    </view>
+    <view class="cu-bar bg-white justify-end">
+      <view class="action">
+        <button class="cu-btn bg-blue margin-left" bindtap="prevent">复制</button>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="grid col-2" style="margin: -4px 15px 0px">
+  <view class="bg-img padding-bottom-xl" style="background-image: url('https://oss.xtyu.top/blog-image/WechatIMG319_1626919165683.png');height: 700rpx; margin: 0px 3px 0px;width: 49%;">
+    <view class="bg-shadeTop padding padding-bottom-xl">
+      进入短视频平台复制分享链接
+    </view>
+  </view>
+  <view class="bg-img padding-bottom-xl" style="background-image: url('https://oss.xtyu.top/blog-image/WechatIMG320_1626919195802.jpeg');height: 700rpx;width: 49%;">
+    <view class="bg-shadeTop padding padding-bottom-xl">
+      粘贴短视频平台复制好的链接到本小程序，点击一键去除视频水印按钮
+    </view>
+  </view>
+</view>
+
+<view class="cu-card article">
+<view class="cu-item shadow">
+      <view class="title">
+
+      </view>
+</view>
+<view class="cu-item shadow">
+      <view class="title">
+      </view>
+</view>
+</view>

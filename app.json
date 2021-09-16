@@ -1,0 +1,20 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/home/parsingInfo/parsingInfo",
+    "pages/photos/photos",
+    "pages/help/help",
+    "pages/resolution/resolution",
+    "pages/welfare/welfare"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#39b54a",
+    "navigationBarTitleText": "视频解析工具箱",
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "white"
+  },
+  "usingComponents": {
+    "cu-custom": "/colorui/components/cu-custom"
+  },
+  "sitemapLocation": "sitemap3.json"
+}
