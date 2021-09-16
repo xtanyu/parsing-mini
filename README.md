@@ -2,7 +2,7 @@
 ### 扫码预览
 ![image.png](https://oss.xtyu.top/blog-image/image_1631760814906.png)
 ### 界面展示
-|首页![image.png](https://oss.xtyu.top/blog-image/image_1631761041711.png)|广告接入页![image.png](https://oss.xtyu.top/blog-image/image_1631761083702.png)|帮助页![image.png](https://oss.xtyu.top/blog-image/image_1631761100894.png)|我的信息页![image.png](https://oss.xtyu.top/blog-image/image_1631761154660.png)|
+|![image.png](https://oss.xtyu.top/blog-image/image_1631761041711.png)|![image.png](https://oss.xtyu.top/blog-image/image_1631761083702.png)|![image.png](https://oss.xtyu.top/blog-image/image_1631761100894.png)|![image.png](https://oss.xtyu.top/blog-image/image_1631761154660.png)|
 |-------|-------|-------|-------|
 |![image.png](https://oss.xtyu.top/blog-image/image_1631761398645.png)|![image.png](https://oss.xtyu.top/blog-image/image_1631761484034.png)|![image.png](https://oss.xtyu.top/blog-image/image_1631761501219.png)|![image.png](https://oss.xtyu.top/blog-image/image_1631761523166.png)|
 
