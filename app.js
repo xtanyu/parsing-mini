@@ -50,8 +50,7 @@ App({
           }
   },
   globalData: {
-     //url: "https://api.xtyu.top/",
-     url:"http://127.0.0.1:10521/",
+     url:"http://127.0.0.1:10521/",//更改为你自己的服务端地址
      ColorList: [{
         title: '嫣红',
         name: 'red',

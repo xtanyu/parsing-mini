@@ -20,3 +20,9 @@
 ### 项目简介
 - 样式基于[ColorUI](https://github.com/weilanwl/ColorUI)
 - [视频解析服务端](https://github.com/xtanyu/ToolApi)（Java版本）
+
+### 项目运行
+1. 启动[视频解析服务端](https://github.com/xtanyu/ToolApi)（Java版本）
+2. 修改[app.js文件](https://github.com/xtanyu/parsing-mini/blob/main/app.js)url![](https://oss.xtyu.top/blog-image/WeChat1a6c20afdc99177aa4913d374d45832c_1632374682363.png)
+3. 修改[request.js文件](https://github.com/xtanyu/parsing-mini/blob/main/utils/request.js) ![](https://oss.xtyu.top/blog-image/WeChat1e65cae0701aeeeb1fab1ce900cad6ef_1632374718082.png)
+

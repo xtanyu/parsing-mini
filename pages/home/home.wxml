@@ -43,13 +43,6 @@
       </navigator>
     </view> -->
 
-    <!-- <view class="cu-item arrow">
-      <navigator class="content" bindtap="test" hover-class="none">
-        <text class="cuIcon-formfill text-red"></text>
-        <text class="text-grey">解析记录</text>
-      </navigator>
-    </view> -->
-
     <view class="cu-item arrow">
       <view class="content" bindtap="showQrcode">
         <text class="cuIcon-weixin text-green"></text>
@@ -63,13 +56,15 @@
         <text class="text-grey">意见反馈</text>
       </button>
     </view>
-   <!--
+
+    <!--希望你使用该项目时能保留该项，尊重一下作者的劳动成果-->
     <view class="cu-item arrow">
-      <navigator class="content" url="/pages/about/test/list" hover-class="none">
-        <text class="cuIcon-creativefill text-orange"></text>
-        <text class="text-grey">更新日志</text>
-      </navigator>
-    </view> -->
+      <view class="content" bindtap="CopyLink" data-link="https://github.com/xtanyu/parsing-mini">
+        <text class="cuIcon-github text-grey"></text>
+        <text class="text-grey">GitHub</text>
+      </view>
+    </view>
+    
   </view>
   <view class="cu-tabbar-height"></view>
 
