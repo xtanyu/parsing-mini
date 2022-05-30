@@ -1,6 +1,6 @@
 # 短视频去水印工具【微信小程序端】
 ### 扫码预览
-![image.png](https://oss.xtyu.top/blog-image/image_1631760814906.png)
+![gh_668189476a42_258 (4)](https://user-images.githubusercontent.com/50282105/170926039-9f7aec92-01bb-4b98-a6cd-4e4c5d09556d.jpg)
 ### 界面展示
 |![image.png](https://oss.xtyu.top/blog-image/image_1631761041711.png)|![image.png](https://oss.xtyu.top/blog-image/image_1631761083702.png)|![image.png](https://oss.xtyu.top/blog-image/image_1631761100894.png)|![image.png](https://oss.xtyu.top/blog-image/image_1631761154660.png)|
 |-------|-------|-------|-------|
